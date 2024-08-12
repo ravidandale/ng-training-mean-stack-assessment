@@ -1,0 +1,22 @@
+<form (ngSubmit)="handleSubmit()" class="add-task-form">
+  <input
+      type="text"
+      placeholder="Assigned to"
+      [(ngModel)]="name"
+      name="name"
+      (ngModelChange)="handleChange()"
+  />
+  <textarea
+      placeholder="Description"
+      [(ngModel)]="desc"
+      name="desc"
+      (ngModelChange)="handleChange()"
+  ></textarea>
+  <input
+      type="date"
+      [(ngModel)]="deadline"
+      name="deadline"
+      (ngModelChange)="handleChange()"
+  />
+  <button type="submit" [disabled]="disable">Add Task</button>
+</form>

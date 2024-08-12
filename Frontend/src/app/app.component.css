@@ -1,0 +1,110 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.task-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-column {
+    width: 48%;
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-column h2 {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+li.editing {
+    background: #e6f7ff;
+}
+
+button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+/* Update Button */
+button:nth-child(1) {
+    background-color: #28a745; /* Bootstrap green */
+    color: white;
+}
+
+button:nth-child(1):hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Edit Button */
+button:nth-child(2) {
+    background-color: #007bff; /* Bootstrap blue */
+    color: white;
+}
+
+button:nth-child(2):hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Delete Button */
+button:nth-child(3) {
+    background-color: #dc3545; /* Bootstrap red */
+    color: white;
+}
+
+button:nth-child(3):hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+/* Complete Button */
+button:nth-child(4) {
+    background-color: #ffc107; /* Bootstrap yellow */
+    color: white;
+}
+
+button:nth-child(4):hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+/* Make the input fields inside the editing state look consistent */
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    font-size: 14px;
+}
